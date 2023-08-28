@@ -1,29 +1,96 @@
 .container__nav-bar {
-  margin: 30px 0px;
+  padding: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .container__nav-bar > ul {
-  margin-right: 20px;
   list-style: none;
   display: flex;
   flex-direction: row;
-  color: #02543e;
+  color: var(--color2);
   text-decoration: none;
+  width: 300px;
+  justify-content: space-around;
 }
 
 .container__nav-bar > ul > li {
-  margin-right: 20px;
-  color: #02543e;
   font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-bar__buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 14px;
 }
 
 .nav-bar__buttons > button {
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
   border-radius: 12px;
-  padding: 8px 16px;
+  padding: 4px 8px;
   font-weight: bold;
   cursor: pointer;
-  color: #02543e;
+  color: var(--color2);
+  font-size: 12px;
+  border: 2px solid var(--color2);
+}
+
+.nav-bar__buttons > .buttons_two {
+  color: var(--color1);
+  background-color: var(--color2);
+}
+
+@media (min-width: 390px) {
+  .container__nav-bar {
+    padding: 0px 10px;
+    margin: 30px 0px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .container__nav-bar > ul {
+    margin-right: 10px;
+    width: 280px;
+  }
+
+  .container__nav-bar > ul > li {
+    margin-right: 10px;
+  }
+
+  .nav-bar__buttons {
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container__nav-bar {
+    padding: 0px;
+  }
+
+  .container__nav-bar > ul {
+    margin-right: 20px;
+    width: 400px;
+  }
+
+  .container__nav-bar > ul > li {
+    margin-right: 20px;
+    font-size: 16px;
+  }
+
+  .nav-bar__buttons {
+    flex-direction: row;
+  }
+
+  .nav-bar__buttons > button {
+    margin-left: 20px;
+    margin-bottom: 0px;
+    padding: 8px 16px;
+    font-size: 16px;
+  }
 }
