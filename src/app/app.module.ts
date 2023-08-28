@@ -7,7 +7,6 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { MenuTitleComponent } from './components/menu-title/menu-title.component';
 import { BigCardComponent } from './components/big-card/big-card.component';
 import { SmallCardComponent } from './components/small-card/small-card.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
@@ -17,14 +16,10 @@ import { HomeComponent } from './pages/home/home.component';
     MenuTitleComponent,
     BigCardComponent,
     SmallCardComponent,
-    FooterComponent,
-    HomeComponent
+    HomeComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

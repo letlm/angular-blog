@@ -1,13 +1,22 @@
+:root {
+  --color1: #fffbdf;
+  --color2: #ff43c8;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #fcf8ef;
+  background-color: var(--color1);
   font-family: "Gill Sans", sans-serif;
 }
 
 a {
   text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
 }
 
 body {
