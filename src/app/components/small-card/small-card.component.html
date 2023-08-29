@@ -1,28 +1,21 @@
 <div class="container__small">
   <div class="small__img">
-    <img
-      src="https://www.morecap.com.br/assets/images/SM-placeholder.png"
-      alt="Ideias"
-      height="60px"
-      srcset=""
-    />
+    <img src="{{ photoCover }}" height="60px" srcset="" />
   </div>
   <div class="small__other">
-    <span> Lorem ipsum &#9679; 18 Jan 2023</span>
+    <span> {{ cardDate }}</span>
     <h1>
-      <a href="#" class="small__title">Novos tecnologias</a>
+      <a [routerLink]="['content', id]" class="small__title">{{ cardTitle }}</a>
     </h1>
 
     <p class="small__description">
-      <a href="#">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+      <a [routerLink]="['content', id]">
+        {{ cardDescription }}
       </a>
     </p>
 
     <div class="small__keys">
-      <span>News</span>
-      <span>Techs</span>
+      <span *ngFor="let keyNew of cardKeys"> {{ keyNew }}</span>
     </div>
   </div>
 </div>

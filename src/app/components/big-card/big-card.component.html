@@ -1,26 +1,18 @@
 <div class="container__big">
   <div class="big__img">
-    <img
-      src="https://www.morecap.com.br/assets/images/SM-placeholder.png"
-      alt="Ideias"
-      height="250px"
-      srcset=""
-    />
+    <img src="{{ photoCover }}" alt="Ideias" height="250px" srcset="" />
   </div>
   <h1>
-    <a href="#" class="big__title">Veja agora as novidades!</a>
+    <a [routerLink]="['content', id]" class="big__title">{{ cardTitle }}</a>
   </h1>
 
   <p class="big__description">
-    <a href="#">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.
+    <a [routerLink]="['content', id]">
+      {{ cardDescription }}
     </a>
   </p>
 
   <div class="big__keys">
-    <span>News</span>
-    <span>Lorem</span>
-    <span>Ipsum</span>
+    <span *ngFor="let keyNew of cardKeys"> {{ keyNew }}</span>
   </div>
 </div>
