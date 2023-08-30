@@ -1,0 +1,26 @@
+.all__content {
+  padding: 0px 12px;
+  margin-bottom: 12px;
+}
+
+.container__articles {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .all__content {
+    max-width: 850px;
+  }
+
+  .container__articles {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    align-items: start;
+  }
+}

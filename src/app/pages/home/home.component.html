@@ -1,0 +1,34 @@
+<div class="all__content">
+  <app-menu-title></app-menu-title>
+  <div class="container__articles">
+    <div class="articles__main">
+      <app-big-card
+        id="1"
+        photoCover="https://acaditi.com.br/wp-content/uploads/2021/02/A-importancia-da-criptografia-moderna-1.jpg"
+        cardTitle="Saiba sobre criptografia"
+        cardDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua."
+        [cardKeys]="['News', 'Title', 'Lorem']"
+      ></app-big-card>
+    </div>
+    <div class="articles__others">
+      <app-small-card
+        id="2"
+        photoCover="https://img.freepik.com/fotos-premium/um-dispositivo-de-computacao-em-nuvem-com-fundo-azul-e-luzes-roxas_777174-73.jpg?w=2000"
+        cardTitle="Computação em nuvem"
+        cardDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        cardDate="22 jun - 2023"
+        [cardKeys]="['News', 'Title']"
+      ></app-small-card>
+      <app-small-card
+        id="3"
+        photoCover="https://img.freepik.com/fotos-premium/tecnologia-de-hospedagem-de-computacao-em-nuvem-3d-com-dispositivos-eletronicos_843415-37.jpg?w=2000"
+        cardTitle="Hospedagem em nuvem"
+        cardDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        cardDate="22 jun - 2023"
+        [cardKeys]="['News', 'Title']"
+      ></app-small-card>
+    </div>
+  </div>
+</div>
