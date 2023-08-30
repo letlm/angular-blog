@@ -7,7 +7,6 @@
   justify-content: flex-start;
   align-items: center;
   color: var(--color2);
-  border: 1px solid black;
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -82,8 +81,11 @@
 
   .small__other {
     width: 50%;
-    padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .small__other > h1 {
+    font-size: 12px;
   }
 }
 
@@ -91,7 +93,7 @@
   .container__small {
     padding-top: 0px;
     max-width: 400px;
-    height: 200px;
+    min-height: 200px;
     justify-content: space-between;
     padding-bottom: 0px;
   }

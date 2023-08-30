@@ -6,7 +6,6 @@
   height: fit-content;
   justify-content: flex-start;
   color: var(--color2);
-  border: 1px solid red;
   margin-bottom: 10px;
 }
 
@@ -71,7 +70,7 @@
     flex-direction: column;
     margin-bottom: 0px;
     max-width: 400px;
-    height: 400px;
+    height: fit-content;
   }
 
   .big__img > img {
